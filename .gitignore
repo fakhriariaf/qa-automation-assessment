@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Playwright
+test-results/
+playwright-report/
+*.zip
+*.webm
+
+# WDIO / Mobile
+mobile-testing/node_modules/
+mobile-testing/screenshots/*.mp4
+mobile-testing/screenshots/*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# APK
+*.apk
+
+# Temp files
+image.png
