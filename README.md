@@ -1,3 +1,10 @@
+# QA Automation Assessment
+
+[![Author](https://img.shields.io/badge/Author-Fakhri%20Aria%20Fadhlillah-blue)](https://github.com/fakhriariaf)
+[![GitHub](https://img.shields.io/badge/GitHub-fakhriariaf-black?logo=github)](https://github.com/fakhriariaf)
+
+---
+
 # Part 4 – Comprehensive Documentation  
 QA Automation Assessment  
 
