@@ -35,18 +35,28 @@ Test execution results and response bodies are automatically stored for evidence
 
 ## Implemented Test Scenarios
 
-| ID | Scenario | Endpoint | Expected Result |
-|----|----------|----------|----------------|
-| API01 | Get all posts | GET /posts | 200 OK |
-| API02 | Get single post | GET /posts/1 | 200 OK |
-| API03 | Create new post | POST /posts | 201 Created |
-| API04 | Get comments | GET /posts/1/comments | 200 OK |
-| API05 | Invalid endpoint | GET /postsss | 404 Not Found |
-| API06 | Invalid ID | GET /posts/abc | 404 Not Found |
-| API07 | Empty payload | POST /posts | 201 Created (mock behavior) |
-| API08 | Large ID | GET /posts/99999 | 404 Not Found |
-| API09 | Header validation | GET /posts | application/json |
-| API10 | Response time | GET /posts | < 2 seconds |
+| ID    | Scenario                   | Endpoint               | Expected Result             |
+| ----- | -------------------------- | ---------------------- | --------------------------- |
+| API01 | Get all posts              | GET /posts             | 200 OK                      |
+| API02 | Get single post            | GET /posts/1           | 200 OK                      |
+| API03 | Create new post            | POST /posts            | 201 Created                 |
+| API04 | Get post comments          | GET /posts/1/comments  | 200 OK                      |
+| API05 | Update post (PUT)          | PUT /posts/1           | 200 OK                      |
+| API06 | Patch post                 | PATCH /posts/1         | 200 OK                      |
+| API07 | Delete post                | DELETE /posts/1        | 200 OK                      |
+| API08 | Invalid endpoint           | GET /postsss           | 404 Not Found               |
+| API09 | Invalid ID                 | GET /posts/999999      | 404 Not Found               |
+| API10 | Empty payload              | POST /posts            | 201 Created (mock behavior) |
+| API11 | Header validation          | GET /posts             | application/json            |
+| API12 | Response time check        | GET /posts             | < 2 seconds                 |
+| API13 | Get users                  | GET /users             | 200 OK                      |
+| API14 | Get todos                  | GET /todos             | 200 OK                      |
+| API15 | Query params comments      | GET /comments?postId=1 | postId = 1                  |
+| API16 | Response schema validation | GET /posts/1           | Required fields exist       |
+| API17 | Bulk posts validation      | GET /posts             | All IDs exist               |
+| API18 | Negative payload types     | POST /posts            | 201 Created                 |
+| API19 | OPTIONS method             | OPTIONS /posts         | < 500                       |
+| API20 | Multiple sequential calls  | GET /posts (3x)        | All return 200              |
 
 ---
 
@@ -115,6 +125,7 @@ After execution, the following files are generated automatically:
     → Contains:
     → Test name
     → Status code
+    → response Time
     → Timestamp
 
 

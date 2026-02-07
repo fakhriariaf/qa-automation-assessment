@@ -89,6 +89,8 @@ mobile-testing/screenshots
 ## API
 - POST
 - GET
+- PUT
+- DELETE
 - Positive & negative validation
 
 ## Mobile
