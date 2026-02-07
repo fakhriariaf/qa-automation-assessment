@@ -108,7 +108,8 @@ AI was used strictly as a productivity assistant.
 
 ## 3. Test Flow Diagram (Mobile Login Scenario)
 
-![Mobile Flow](mobile_flow.png)
+![Mobile Flow](./diagrams/mobile_flow.png)
+
 
 This diagram illustrates:
 
