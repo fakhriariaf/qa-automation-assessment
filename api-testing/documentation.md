@@ -33,6 +33,33 @@ Test execution results and response bodies are automatically stored for evidence
 
 ---
 
+### API Automation Coverage
+API Testing Flow Diagram (JSONPlaceholder Automation)
+![API Flow](../diagrams/api_flow.png)
+
+#### ✔ Setup
+- Initialize Playwright API request context
+- Prepare request payload and query parameters
+
+#### ✔ Execution
+- Support multiple HTTP methods (GET, POST, PUT, PATCH, DELETE)
+- Query parameter validation
+- OPTIONS request handling
+
+#### ✔ Validation
+- HTTP status code validation
+- Response header validation
+- Response schema validation
+- Response body assertion
+- Performance check (response time)
+
+#### ✔ Reporting
+- Save JSON response per test case
+- Log status code and response duration
+- Handle both positive and negative scenarios
+
+
+
 ## Implemented Test Scenarios
 
 | ID    | Scenario                   | Endpoint               | Expected Result             |

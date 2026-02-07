@@ -29,6 +29,21 @@ to provide execution evidence.
 
 ---
 
+## Flow Diagram (Mobile Login Scenario)
+
+![Mobile Flow](../diagrams/mobile_flow.png)
+
+
+This diagram illustrates:
+
+- Invalid login retries
+- Successful authentication
+- Forms interaction
+- Gesture testing
+- Screenshot and video recording
+
+---
+
 ## 2. Project Structure
 mobile-testing/
 │

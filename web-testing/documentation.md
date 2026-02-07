@@ -39,6 +39,12 @@ This project is structured using Page Object Model (POM) to improve maintainabil
 
 ---
 
+Flow Diagram Web-testing (Web testing End to End)
+
+![Web Flow](../diagrams/web_flow.png)
+
+---
+
 ## Project Structure
 
 web-testing/
@@ -60,6 +66,7 @@ web-testing/
 
 
 ---
+
 
 ## Automation Architecture
 
